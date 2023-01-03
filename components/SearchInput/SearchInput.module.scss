@@ -1,6 +1,17 @@
-.SearchInputSm{
-
+.SearchInputSm {
 }
-.SearchInputLg{
+.SearchInputLg {
+  @apply bg-white py-3 px-4 rounded-lg;
+  input {
+    @apply leading-[68px] h-[68px] px-8;
+    font-size: 18px !important;
+  }
+  button {
+    height: 68px !important;
+    width: 68px !important;
+  }
 
+  .ant-input {
+    border-width: 2px !important;
+  }
 }

@@ -39,7 +39,11 @@ export const MainNav = ({ children, showSearch }: Props) => {
               ) : (
                 <div className={styles.Main_Nav_Links}>
                   {links.map((link) => {
-                    return <Link href={link.link}>{link.label}</Link>;
+                    return (
+                      <Link key={link.label + link.link} href={link.link}>
+                        {link.label}
+                      </Link>
+                    );
                   })}
                 </div>
               )}

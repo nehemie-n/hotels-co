@@ -11,7 +11,16 @@ export const PageLayout = ({ children, showSearch }: HomeLayoutProps) => {
   return (
     <ConfigProvider
       theme={{
+        token: {
+          paddingLG: 30,
+          sizeLG: 60,
+          sizeMD: 60,
+        },
         components: {
+          Input: {
+            size: 60,
+            sizeLG: 60,
+          },
           Button: {
             size: 50,
             sizeLG: 60,
@@ -19,9 +28,9 @@ export const PageLayout = ({ children, showSearch }: HomeLayoutProps) => {
         },
       }}
     >
+      <MainNav showSearch={showSearch}></MainNav>
       <div className={styles.PageLayout}>
         {/* nav */}
-        <MainNav showSearch={showSearch}></MainNav>
         {/*  */}
         <div>{children}</div>
         {/* Footer */}

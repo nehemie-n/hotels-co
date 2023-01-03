@@ -13,6 +13,7 @@ export function AppLogo({ size = 30 }: Props) {
           src={"thirteen.svg"}
           height={size}
           width={30}
+          style={{ width: "auto", height: "auto" }}
           alt="Hotels&Co"
         ></Image>
         <h2>Hotels&Co</h2>

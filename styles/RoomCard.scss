@@ -1,0 +1,58 @@
+.RoomCard {
+  @apply shadow-md;
+  @apply border-2 border-slate-100 rounded-xl;
+  @apply transition-all ease-in duration-200;
+
+  &:hover {
+    @apply border-blue-800;
+    @apply shadow-lg;
+  }
+
+  // Details
+  .RoomCard_Det {
+    @apply text-xs; // major texts here are smaller
+
+    .RoomCard_Det-Cont {
+      @apply py-2 px-2;
+    }
+    // Details about showe bedrroms
+    .RoomCard_Det-Ln {
+      @apply flex justify-between gap-2;
+    }
+    .RoomCard_Det_Lbold {
+      color: black;
+      @apply font-bold;
+    }
+    .RoomCard_Det_Label {
+      @apply text-xs text-gray-500;
+    }
+
+    //
+    // Pricing
+    .RoomCard_Det-Pricing {
+      @apply flex gap-2 justify-between pt-2;
+      .RoomCard_Det-Price {
+        @apply text-black font-bold text-base;
+      }
+    }
+    //
+    // Name and rating
+    .RoomCard_Det_Name {
+      @apply flex flex-row gap-x-6 items-start justify-between;
+      h3 {
+        @apply text-sm opacity-60;
+        @apply font-medium;
+      }
+      .Rate_Icon {
+        @apply text-yellow-400;
+      }
+      .RoomCard_Det_Rate {
+        @apply pt-2;
+      }
+    }
+    //
+    // .el-divider--horizontal {
+    //   margin: 0 0;
+    // }
+  }
+}
