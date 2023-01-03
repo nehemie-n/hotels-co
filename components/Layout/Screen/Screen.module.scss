@@ -1,0 +1,10 @@
+.MainNav {
+  @apply mx-auto;
+}
+
+.MainNav_Wide {
+  @apply px-2;
+}
+.MainNav_Shallow {
+  @apply md:max-w-screen-xl xl:max-w-screen-2xl;
+}

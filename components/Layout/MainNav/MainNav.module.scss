@@ -1,0 +1,21 @@
+.MainNav {
+  @apply py-1 px-1 md:px-1;
+}
+
+.Main_Nav_H {
+  @apply grid grid-cols-3 items-center;
+}
+
+.Main_Nav_Actions {
+}
+.Main_Nav_Actions {
+  @apply flex justify-end items-center;
+}
+
+.Main_Nav_Links {
+  @apply flex gap-5 justify-center items-center;
+  @apply font-semibold text-center;
+  a {
+    @apply py-3 px-3 text-base;
+  }
+}

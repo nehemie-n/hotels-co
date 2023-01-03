@@ -1,7 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Poppins } from "@next/font/google";
-import { HomeLayout } from "../components";
 import Link from "next/link";
 
 export const getStaticProps = async () => {

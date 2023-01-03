@@ -1,0 +1,9 @@
+.AppLogo {
+  @apply flex space-x-1 items-center gap-x-2;
+  img {
+    @apply object-contain mt-1;
+  }
+  h2 {
+    @apply font-bold text-xl;
+  }
+}
