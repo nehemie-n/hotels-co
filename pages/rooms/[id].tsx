@@ -77,12 +77,12 @@ export default function RoomPage({ id }: any) {
       <PageLayout>
         <Screen>
           <main className="py-12">
-            {isLoading || (isFetching && false) ? (
+            {isLoading || isFetching ? (
               <RoomViewLoading />
-            ) : error || true ? (
+            ) : error ? (
               <RoomViewError />
             ) : (
-              <div>{/* <RoomViewResult room={data!} /> */}</div>
+              <div>{<RoomViewResult room={data!} />}</div>
             )}
           </main>
         </Screen>
