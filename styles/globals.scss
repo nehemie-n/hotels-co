@@ -9,5 +9,9 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+@import "./RoomCard.scss";
+@import "./RoomView.scss";
 
-@import './RoomCard.scss'
+.ant-btn > span {
+  display: inline-flex !important;
+}

@@ -1,0 +1,14 @@
+.RoomView {
+  .Room_Pin {
+    @apply flex gap-x-2 flex-row my-2 py-1 items-center;
+  }
+  .Room_Pin_C {
+    @apply h-12 w-12 bg-slate-200 rounded-full justify-center items-center flex;
+  }
+  .Room_Pin_B{
+    @apply font-bold;
+  }
+  .Room_Pin_L{
+    @apply flex gap-x-2;
+  }
+}

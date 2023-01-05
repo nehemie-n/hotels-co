@@ -90,9 +90,18 @@ export function RoomCard({ children, room }: Props) {
 
   const CardCarousel = () => {
     return (
-      <Carousel>
-        {ArrayShuffle(room.images).map((img) => {
-          return <img src={img} height={200} />;
+      <Carousel adaptiveHeight={false}>
+        {ArrayShuffle(room.images).map((img, index) => {
+          return (
+            // <div style={{ height: "200px" }}>
+            <img
+              key={img + index + "img"}
+              className="object-cover rounded-md"
+              src={img}
+              height={200}
+            />
+            // </div>
+          );
         })}
       </Carousel>
     );
@@ -103,7 +112,9 @@ export function RoomCard({ children, room }: Props) {
       <Link href={`/rooms/${room.id}`}>
         {/*  */}
         {/* Carousel */}
-        <CardCarousel />
+        <div style={{ height: "220px" }}>
+          <CardCarousel />
+        </div>
 
         {/* Details */}
         <div className="RoomCard_Det">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./AppLogo.module.scss";
+import img from '../../public/thirteen.svg';
 
 interface Props {
   size?: number;
@@ -10,7 +11,7 @@ export function AppLogo({ size = 30 }: Props) {
     <Link href={"/"}>
       <div className={styles.AppLogo}>
         <Image
-          src={"thirteen.svg"}
+          src={img}
           height={size}
           width={30}
           style={{ width: "auto", height: "auto" }}
