@@ -29,7 +29,7 @@ export default function NotFoundPage() {
                 />
                 <h1 className="font-bold text-4xl">Ooops!</h1>
                 <p className="text-2xl opacity-70">
-                  Couldn<span>&#39</span>t find the page you are looking for. Check the url you
+                  Couldn't find the page you are looking for. Check the url you
                   browsed too.
                 </p>
                 <div>

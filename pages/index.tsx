@@ -34,7 +34,7 @@ export default function HomePage() {
                 <div className="text-6xl font-bold">
                   <p>Want a place to stay?</p>
                   <p>
-                    We<span>&#39</span>ve got you covered!
+                    We<span>'</span>ve got you covered!
                   </p>
                 </div>
                 <p className="text-2xl py-8 text-white opacity-80">
