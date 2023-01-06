@@ -90,13 +90,13 @@ export function RoomCard({ children, room }: Props) {
 
   const CardCarousel = () => {
     return (
-      <Carousel adaptiveHeight={false}>
+      <Carousel className="max-h-[220px]" style={{ height: "220px" }} adaptiveHeight={false}>
         {ArrayShuffle(room.images).map((img, index) => {
           return (
             // <div style={{ height: "200px" }}>
             <img
               key={img + index + "img"}
-              className="object-cover rounded-md"
+              className="object-cover rounded-md  max-h-[220px]"
               src={img}
               height={200}
             />

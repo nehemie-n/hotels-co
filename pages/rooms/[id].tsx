@@ -74,7 +74,7 @@ export default function RoomPage({ id }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*  */}
-      <PageLayout>
+      <PageLayout showSearch>
         <Screen>
           <main className="py-12">
             {isLoading || isFetching ? (

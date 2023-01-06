@@ -25,7 +25,7 @@ export function HomeRooms() {
 
   return (
     <Screen>
-      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {data.items.map((r) => {
           return <RoomCard key={r.id + "room"} room={r}></RoomCard>;
         })}

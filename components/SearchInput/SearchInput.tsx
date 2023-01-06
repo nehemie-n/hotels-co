@@ -39,7 +39,7 @@ export function SearchInput({ children, size = "middle" }: Props) {
       <Search
         value={value}
         size="large"
-        placeholder="Search for a hotel"
+        placeholder="Search for a hotel / room"
         onSearch={onSearch}
         onChange={(v)=> setValue(v.target.value)}
         enterButton
