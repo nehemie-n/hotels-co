@@ -8,6 +8,7 @@ export function RoomImg({ img, children }: Props) {
       <img
         className="h-[400px] w-full object-cover h-400px rounded-lg"
         src={img}
+        alt={img}
       />
       <div
         className="rounded-lg absolute top-0 left-0 right-0 bottom-0

@@ -99,6 +99,7 @@ export function RoomCard({ children, room }: Props) {
               className="object-cover rounded-md  max-h-[220px]"
               src={img}
               height={200}
+              alt={img}
             />
             // </div>
           );

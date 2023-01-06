@@ -1,9 +1,9 @@
 import { Button } from "antd";
-import Link from "next/link";
-import { Screen } from "../components/Layout/Screen/Screen";
 import Head from "next/head";
-import { PageLayout } from "../components";
 import Image from "next/image";
+import Link from "next/link";
+import { PageLayout } from "../components";
+import { Screen } from "../components/Layout/Screen/Screen";
 import img404 from "../public/Error404.svg";
 
 export default function NotFoundPage() {
@@ -17,7 +17,7 @@ export default function NotFoundPage() {
       </Head>
       {/*  */}
       <PageLayout>
-        <main className="">
+        <main>
           <Screen>
             <div className="max-w-screen-sm mx-auto text-center">
               <div className="min-h-[90vh] flex flex-col justify-center items-center gap-4">
@@ -29,7 +29,7 @@ export default function NotFoundPage() {
                 />
                 <h1 className="font-bold text-4xl">Ooops!</h1>
                 <p className="text-2xl opacity-70">
-                  Couldn't find the page you are looking for. Check the url you
+                  Couldn<span>&#39</span>t find the page you are looking for. Check the url you
                   browsed too.
                 </p>
                 <div>

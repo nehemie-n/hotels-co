@@ -38,7 +38,7 @@ export default function ResultsPage() {
           </div>
           {/* Footer Art */}
           <div className="opacity-40 relative z-10 pt-20">
-            <img className="w-full" src="footer-art.svg" />
+            <img className="w-full" src="footer-art.svg" alt="footer svg" />
           </div>
         </main>
       </PageLayout>

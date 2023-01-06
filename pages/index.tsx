@@ -23,7 +23,7 @@ export default function HomePage() {
             <div className="absolute z-0 top-0 bottom-0 left-0 right-0">
               <img
                 src="home.jpg"
-                alt=""
+                alt={"home Back"}
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -33,7 +33,9 @@ export default function HomePage() {
                 <div className="text-5xl font-semibold">Hotels&Co</div>
                 <div className="text-6xl font-bold">
                   <p>Want a place to stay?</p>
-                  <p>We've got you covered!</p>
+                  <p>
+                    We<span>&#39</span>ve got you covered!
+                  </p>
                 </div>
                 <p className="text-2xl py-8 text-white opacity-80">
                   Just hit the search button!
@@ -53,7 +55,7 @@ export default function HomePage() {
           <HomeRooms />
           {/* Footer Art */}
           <div className="opacity-40 relative z-10 pt-20">
-            <img className="w-full" src="footer-art.svg" />
+            <img className="w-full" src="footer-art.svg" alt="footer svg" />
           </div>
         </main>
       </PageLayout>

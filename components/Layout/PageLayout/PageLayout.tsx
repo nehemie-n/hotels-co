@@ -60,15 +60,19 @@ function MobileUnemplemented() {
           <Space direction="vertical">
             <a className="inline-block" href="">
               <button className="bg-transparent">
-                <img className="h-12 lg:h-14" src={IosDownloadImg.src} alt="" />
+                <img
+                  alt="IosDownload"
+                  className="h-12 lg:h-14"
+                  src={IosDownloadImg.src}
+                />
               </button>
             </a>
             <a className="inline-block" href="">
               <button className="bg-transparent">
                 <img
+                  alt="AndroidDownload"
                   className="h-12 lg:h-14"
                   src={PlayStoreDownloadImg.src}
-                  alt=""
                 />
               </button>
             </a>
