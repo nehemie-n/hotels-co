@@ -33,7 +33,7 @@ export default function ResultsPage() {
       <PageLayout showSearch>
         <main className="">
           {/* Restult Rooms */}
-          <div className="py-6">
+          <div data-testid="ResultsSection" className="py-6">
             {txt ? <Results txt={txt} /> : <RoomsLoading />}
           </div>
           {/* Footer Art */}

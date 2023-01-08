@@ -5,7 +5,7 @@ import { PageLayout } from "../components";
 interface Props {
   data: Array<{ name: string }>;
 }
-export default function ResultsPage({ data }: Props) {
+export default function PricingPage({ data }: Props) {
   return (
     <>
       <Head>

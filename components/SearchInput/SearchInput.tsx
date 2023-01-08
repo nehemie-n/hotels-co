@@ -35,13 +35,13 @@ export function SearchInput({ children, size = "middle" }: Props) {
     [styles.SearchInputLg]: size === "large",
   });
   return (
-    <div className={classes}>
+    <div data-testid="SearchInput" className={classes}>
       <Search
         value={value}
         size="large"
         placeholder="Search for a hotel / room"
         onSearch={onSearch}
-        onChange={(v)=> setValue(v.target.value)}
+        onChange={(v) => setValue(v.target.value)}
         enterButton
       />
     </div>

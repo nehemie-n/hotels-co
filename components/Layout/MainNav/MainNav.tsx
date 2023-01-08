@@ -35,7 +35,7 @@ export const MainNav = ({ children, showSearch }: Props) => {
             {/*  */}
             <div>
               {showSearch ? (
-                <SearchInput></SearchInput>
+                <SearchInput ></SearchInput>
               ) : (
                 <div className={styles.Main_Nav_Links}>
                   {links.map((link) => {

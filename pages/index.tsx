@@ -28,7 +28,10 @@ export default function HomePage() {
               />
             </div>
             {/*  */}
-            <div className="bg-gradient-to-b to-black/90 from-black/50 bg-opacity-70 z-5 relative">
+            <div
+              role="heading"
+              className="bg-gradient-to-b to-black/90 from-black/50 bg-opacity-70 z-5 relative"
+            >
               <div className="max-w-screen-md mx-auto py-12 text-center min-h-[50vh] flex flex-col justify-center gap-y-2 text-white">
                 <div className="text-5xl font-semibold">Hotels&Co</div>
                 <div className="text-6xl font-bold">
@@ -46,13 +49,19 @@ export default function HomePage() {
           {/*  */}
           {/* Home Search */}
           <div className="-translate-y-[50%] z-20 ">
-            <div className="transition-all max-w-screen-md mx-auto hover:shadow-2xl shadow-xl rounded-lg">
+            <div
+              data-testid="HomeSearch"
+              id="HomeSearch"
+              className="transition-all max-w-screen-md mx-auto hover:shadow-2xl shadow-xl rounded-lg"
+            >
               <SearchInput size="large"></SearchInput>
             </div>
           </div>
           {/*  */}
           {/* Proposed Rooms */}
-          <HomeRooms />
+          <div data-testid="HomeRooms">
+            <HomeRooms />
+          </div>
           {/* Footer Art */}
           <div className="opacity-40 relative z-10 pt-20">
             <img className="w-full" src="footer-art.svg" alt="footer svg" />
